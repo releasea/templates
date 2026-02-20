@@ -1,0 +1,28 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: microservice-java
+name: Java (Spring Boot)
+version: 1.0.0
+templateType: microservice
+description: Spring Boot service template with actuator health checks, container build, and safe defaults for enterprise APIs.
+icon: Server
+category: Compute
+owner: Platform team
+bestFor: Enterprise APIs
+defaults: JDK 21, Maven build, Dockerfile
+setupTime: About 6 min
+tier: Core
+highlights:
+  - Actuator health
+  - Canary-ready
+  - Observability-friendly
+templateDefaults:
+  serviceName: java-service
+  port: "8080"
+  healthCheckPath: /actuator/health
+  dockerCommand: java -jar app.jar
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: api-java-springboot

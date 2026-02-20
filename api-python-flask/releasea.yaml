@@ -1,0 +1,28 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: microservice-python-flask
+name: Python (Flask)
+version: 1.0.0
+templateType: microservice
+description: Flask API starter with lightweight routing, health endpoint, and container defaults for fast production delivery.
+icon: Server
+category: Compute
+owner: Platform team
+bestFor: Lightweight APIs and internal tools
+defaults: Python 3.11, Gunicorn, Dockerfile
+setupTime: About 4 min
+tier: Core
+highlights:
+  - Lightweight runtime
+  - Health checks
+  - Fast onboarding
+repoMode: template
+templateDefaults:
+  serviceName: flask-api
+  port: "8000"
+  healthCheckPath: /healthz
+  dockerCommand: gunicorn --bind 0.0.0.0:8000 app:app
+source:
+  owner: releasea
+  repo: templates
+  path: api-python-flask

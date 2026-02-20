@@ -1,0 +1,30 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: site-python-hugo
+name: Static Site (Hugo)
+version: 1.0.0
+templateType: static-site
+description: Hugo template for very fast static builds, ideal for docs and blogs with low runtime complexity.
+icon: Globe
+category: External
+owner: Web platform
+bestFor: Developer docs, blogs, and content websites
+defaults: Hugo static build, public output
+setupTime: About 3 min
+tier: External
+highlights:
+  - Very fast builds
+  - No Node runtime required
+  - Production-ready static output
+templateDefaults:
+  serviceName: hugo-site
+  framework: hugo
+  installCommand: "true"
+  buildCommand: hugo --minify
+  outputDir: public
+  cacheTtl: "3600"
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: site-python-hugo

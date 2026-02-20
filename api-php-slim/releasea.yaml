@@ -1,0 +1,27 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: microservice-php
+name: PHP (Slim)
+version: 1.0.0
+templateType: microservice
+description: Slim 4 API template with composer dependencies, container runtime, and health endpoint defaults.
+icon: Server
+category: Compute
+owner: Platform team
+bestFor: Legacy APIs and lightweight PHP services
+defaults: PHP 8.2, Composer, Dockerfile
+setupTime: About 5 min
+tier: Core
+highlights:
+  - Simple routing
+  - Health checks
+  - Composer-ready
+templateDefaults:
+  serviceName: php-api
+  port: "8080"
+  healthCheckPath: /healthz
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: api-php-slim

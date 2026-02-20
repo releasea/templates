@@ -1,0 +1,13 @@
+{
+  "name": "static-site-eleventy",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "preview": "npx serve _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "2.0.1"
+  }
+}

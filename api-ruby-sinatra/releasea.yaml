@@ -1,0 +1,28 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: microservice-ruby
+name: Ruby (Sinatra)
+version: 1.0.0
+templateType: microservice
+description: Sinatra API starter for simple Ruby services with lightweight routing and production-friendly defaults.
+icon: Server
+category: Compute
+owner: Platform team
+bestFor: Lightweight APIs and prototypes
+defaults: Ruby 3.2, Dockerfile, health checks
+setupTime: About 4 min
+tier: Core
+highlights:
+  - Simple routing
+  - Health checks
+  - Small footprint
+templateDefaults:
+  serviceName: ruby-api
+  port: "8080"
+  healthCheckPath: /healthz
+  dockerCommand: ruby app.rb
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: api-ruby-sinatra

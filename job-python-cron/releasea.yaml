@@ -1,0 +1,33 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: scheduled-job-python
+name: Scheduled Job (Python)
+version: 1.0.0
+templateType: microservice
+templateKind: scheduled-job
+description: Python scheduled job starter with cron defaults, retries, and timeout settings for recurring platform workloads.
+icon: Clock
+category: Automation
+owner: Platform team
+bestFor: Reports, maintenance, and recurring Python tasks
+defaults: Cron schedule, retries, execution timeout
+setupTime: About 3 min
+tier: Core
+highlights:
+  - Cron schedules
+  - Retry controls
+  - Job history visibility
+repoMode: template
+templateDefaults:
+  serviceName: python-job
+  port: "8080"
+  healthCheckPath: /healthz
+  scheduleCron: "0 3 * * *"
+  scheduleTimezone: UTC
+  scheduleCommand: python scripts/run.py
+  scheduleRetries: "3"
+  scheduleTimeout: "900"
+source:
+  owner: releasea
+  repo: templates
+  path: job-python-cron

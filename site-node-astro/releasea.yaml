@@ -1,0 +1,30 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: site-node-astro
+name: Static Site (Astro)
+version: 1.0.0
+templateType: static-site
+description: Astro template focused on content-heavy sites with excellent performance and static asset optimization.
+icon: Globe
+category: External
+owner: Web platform
+bestFor: Docs portals and content-rich websites
+defaults: Astro static build, dist output
+setupTime: About 4 min
+tier: External
+highlights:
+  - Content-first architecture
+  - Fast static output
+  - CDN-friendly assets
+templateDefaults:
+  serviceName: astro-site
+  framework: astro
+  installCommand: npm install
+  buildCommand: npm run build
+  outputDir: dist
+  cacheTtl: "3600"
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: site-node-astro

@@ -1,0 +1,27 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: microservice-dotnet
+name: .NET Web API
+version: 1.0.0
+templateType: microservice
+description: Minimal ASP.NET Core API template with health checks and container defaults for production deployment.
+icon: Server
+category: Compute
+owner: Platform team
+bestFor: Enterprise APIs
+defaults: .NET 8, Dockerfile, health checks
+setupTime: About 6 min
+tier: Core
+highlights:
+  - Minimal API style
+  - Health checks
+  - Kestrel-ready
+templateDefaults:
+  serviceName: dotnet-api
+  port: "8080"
+  healthCheckPath: /healthz
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: api-dotnet-aspnet

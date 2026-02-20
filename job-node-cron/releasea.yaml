@@ -1,0 +1,33 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: scheduled-job
+name: Scheduled Job
+version: 1.0.0
+templateType: microservice
+templateKind: scheduled-job
+description: Cron-based job template for recurring workloads with retry and timeout defaults managed by the platform.
+icon: Clock
+category: Automation
+owner: Platform team
+bestFor: ETL, reports, cleanup, and recurring tasks
+defaults: Cron schedule, retries, execution timeout
+setupTime: About 3 min
+tier: Core
+highlights:
+  - Cron schedules
+  - Retry controls
+  - Job history visibility
+templateDefaults:
+  serviceName: nightly-report
+  port: "8080"
+  healthCheckPath: /healthz
+  scheduleCron: "0 2 * * *"
+  scheduleTimezone: UTC
+  scheduleCommand: node scripts/run.js
+  scheduleRetries: "3"
+  scheduleTimeout: "900"
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: job-node-cron
