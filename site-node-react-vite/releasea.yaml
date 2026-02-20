@@ -1,0 +1,30 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: site-node-react-vite
+name: Static Site (React + Vite)
+version: 1.0.0
+templateType: static-site
+description: React + Vite static-site template for interactive pages with fast builds and CDN-friendly output.
+icon: Globe
+category: External
+owner: Web platform
+bestFor: Product pages, docs frontends, and interactive static experiences
+defaults: React 18, Vite build, dist output
+setupTime: About 4 min
+tier: External
+highlights:
+  - React component model
+  - Fast Vite builds
+  - Static CDN output
+repoMode: template
+templateDefaults:
+  serviceName: react-site
+  framework: react-vite
+  installCommand: npm install
+  buildCommand: npm run build
+  outputDir: dist
+  cacheTtl: "3600"
+source:
+  owner: releasea
+  repo: templates
+  path: site-node-react-vite

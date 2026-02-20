@@ -1,0 +1,29 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: custom-service
+name: Custom Service
+version: 1.0.0
+templateType: microservice
+description: Start from your own repository or container image with full control over runtime, health checks, and deployment strategy.
+icon: Server
+category: Compute
+owner: Platform team
+bestFor: Any containerized service
+defaults: Custom source configuration
+setupTime: About 4 min
+tier: Core
+highlights:
+  - Git or Docker source
+  - Full runtime control
+  - Health checks
+repoMode: existing
+allowTemplateToggle: false
+templateDefaults:
+  serviceName: custom-service
+  rootDir: "."
+  port: "8080"
+  healthCheckPath: /healthz
+source:
+  owner: releasea
+  repo: templates
+  path: custom-service

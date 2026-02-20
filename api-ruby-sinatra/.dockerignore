@@ -1,0 +1,4 @@
+/.bundle
+/vendor
+Dockerfile
+.dockerignore

@@ -1,0 +1,30 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: site-node-vite
+name: Static Site (Vite)
+version: 1.0.0
+templateType: static-site
+description: Vite static-site starter optimized for fast builds, preview deployments, and CDN delivery.
+icon: Globe
+category: External
+owner: Web platform
+bestFor: Marketing pages and documentation hubs
+defaults: npm build pipeline, dist output
+setupTime: About 3 min
+tier: External
+highlights:
+  - Fast builds
+  - Preview deploys
+  - CDN-ready assets
+templateDefaults:
+  serviceName: marketing-site
+  framework: vite
+  installCommand: npm install
+  buildCommand: npm run build
+  outputDir: dist
+  cacheTtl: "3600"
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: site-node-vite

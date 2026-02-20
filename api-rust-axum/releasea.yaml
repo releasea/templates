@@ -1,0 +1,27 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: microservice-rust
+name: Rust (Axum)
+version: 1.0.0
+templateType: microservice
+description: Axum-based Rust API template for low-latency services with health endpoints and containerized builds.
+icon: Server
+category: Compute
+owner: Platform team
+bestFor: Low-latency and CPU-efficient APIs
+defaults: Rust 1.79, release build, Dockerfile
+setupTime: About 6 min
+tier: Core
+highlights:
+  - High performance runtime
+  - Typed APIs
+  - Health checks
+templateDefaults:
+  serviceName: rust-api
+  port: "8080"
+  healthCheckPath: /healthz
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: api-rust-axum

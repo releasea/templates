@@ -1,0 +1,6 @@
+site_name: Releasea Docs Starter
+site_description: Documentation template for Releasea static sites
+nav:
+  - Home: index.md
+theme:
+  name: mkdocs

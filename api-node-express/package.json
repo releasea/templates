@@ -1,0 +1,14 @@
+{
+  "name": "node-microservice",
+  "private": true,
+  "version": "0.1.0",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "migrate": "node -e \"console.log('No migrations configured')\""
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

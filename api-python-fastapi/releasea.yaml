@@ -1,0 +1,28 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: microservice-python
+name: Python (FastAPI)
+version: 1.0.0
+templateType: microservice
+description: FastAPI starter focused on quick API delivery, async workloads, and reliable health checks in production.
+icon: Server
+category: Compute
+owner: Platform team
+bestFor: Async APIs and workers
+defaults: Python 3.11, Uvicorn, Dockerfile
+setupTime: About 5 min
+tier: Core
+highlights:
+  - Async runtime
+  - Health checks
+  - Rapid delivery
+templateDefaults:
+  serviceName: python-api
+  port: "8000"
+  healthCheckPath: /health
+  dockerCommand: uvicorn app.main:app --host 0.0.0.0 --port 8000
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: api-python-fastapi

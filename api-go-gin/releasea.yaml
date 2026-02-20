@@ -1,0 +1,27 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: microservice-go
+name: Go (Gin)
+version: 1.0.0
+templateType: microservice
+description: Lean Go + Gin API template with small images, fast startup, and health endpoints ready for Kubernetes.
+icon: Server
+category: Compute
+owner: Platform team
+bestFor: High-throughput APIs
+defaults: Go 1.22, multi-stage Dockerfile
+setupTime: About 5 min
+tier: Core
+highlights:
+  - Fast startup
+  - Small image footprint
+  - Health checks
+templateDefaults:
+  serviceName: go-service
+  port: "8080"
+  healthCheckPath: /healthz
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: api-go-gin

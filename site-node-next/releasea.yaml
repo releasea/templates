@@ -1,0 +1,30 @@
+apiVersion: releasea.io/v1
+kind: ReleaseaTemplate
+id: site-node-next
+name: Static Site (Next.js)
+version: 1.0.0
+templateType: static-site
+description: Next.js static export template for SEO-focused pages with predictable builds and static hosting output.
+icon: Globe
+category: External
+owner: Web platform
+bestFor: Product websites and SEO-focused landing pages
+defaults: Next.js static export, out output
+setupTime: About 4 min
+tier: External
+highlights:
+  - Static export
+  - SEO-friendly pages
+  - CDN-ready output
+templateDefaults:
+  serviceName: next-site
+  framework: nextjs
+  installCommand: npm install
+  buildCommand: npm run build
+  outputDir: out
+  cacheTtl: "3600"
+repoMode: template
+source:
+  owner: releasea
+  repo: templates
+  path: site-node-next
