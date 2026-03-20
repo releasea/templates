@@ -2,6 +2,15 @@
 
 Starter templates used by the Releasea platform to bootstrap new services. Each folder is a self-contained project with ready-to-deploy defaults for its stack.
 
+> This README is primarily for template contributors and maintainers. For end-user guidance on how templates appear in the product, start with the public documentation linked below.
+
+## Documentation
+
+- Installation guide: [docs.releasea.io/?doc=installation](https://docs.releasea.io/?doc=installation)
+- Installation modes: [docs.releasea.io/?doc=installation-modes](https://docs.releasea.io/?doc=installation-modes)
+- Templates guide: [docs.releasea.io/?doc=templates](https://docs.releasea.io/?doc=templates)
+- Public components: [docs.releasea.io/?doc=public-components](https://docs.releasea.io/?doc=public-components)
+
 ## Available Templates
 
 ### API Services
@@ -41,11 +50,12 @@ Starter templates used by the Releasea platform to bootstrap new services. Each 
 
 ## How It Works
 
-1. When a service is created on Releasea, the platform copies the chosen template into a new repository.
+1. When a service is created in Releasea, the platform copies the chosen template into a new repository.
 2. The service root is set to the template folder.
-3. You can customize the code freely after creation -- the template is just a starting point.
+3. You can customize the code freely after creation - the template is only the starting point.
 
 ## Learn More
 
-- [Releasea Docs](https://docs.releasea.io)
+- [Templates guide](https://docs.releasea.io/?doc=templates)
+- [Public components](https://docs.releasea.io/?doc=public-components)
 - [releasea.io](https://releasea.io)
