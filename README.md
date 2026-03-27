@@ -8,8 +8,12 @@ Starter templates used by the Releasea platform to bootstrap new services. Each 
 
 - Installation guide: [docs.releasea.io/?doc=installation](https://docs.releasea.io/?doc=installation)
 - Installation modes: [docs.releasea.io/?doc=installation-modes](https://docs.releasea.io/?doc=installation-modes)
+- Quickstart validation: [docs.releasea.io/?doc=smoke-checks](https://docs.releasea.io/?doc=smoke-checks)
 - Templates guide: [docs.releasea.io/?doc=templates](https://docs.releasea.io/?doc=templates)
 - Public components: [docs.releasea.io/?doc=public-components](https://docs.releasea.io/?doc=public-components)
+- Template contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Platform contribution guide: [../CONTRIBUTING.md](../CONTRIBUTING.md)
+- Public roadmap: [../ROADMAP.md](../ROADMAP.md)
 
 ## Available Templates
 
