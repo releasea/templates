@@ -88,3 +88,4 @@ Include these points in the PR description:
 - Root contribution guide: [../CONTRIBUTING.md](../CONTRIBUTING.md)
 - Public roadmap: [../ROADMAP.md](../ROADMAP.md)
 - End-user templates guide: [../releasea-docs/src/docs/content/templates.md](../releasea-docs/src/docs/content/templates.md)
+- Template cookbook: [../releasea-docs/src/docs/content/template-cookbook.md](../releasea-docs/src/docs/content/template-cookbook.md)
