@@ -12,8 +12,8 @@ Starter templates used by the Releasea platform to bootstrap new services. Each 
 - Templates guide: [docs.releasea.io/?doc=templates](https://docs.releasea.io/?doc=templates)
 - Public components: [docs.releasea.io/?doc=public-components](https://docs.releasea.io/?doc=public-components)
 - Template contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
-- Platform contribution guide: [../CONTRIBUTING.md](../CONTRIBUTING.md)
-- Public roadmap: [../ROADMAP.md](../ROADMAP.md)
+- Platform contribution guide: [docs.releasea.io/?doc=community-contributing](https://docs.releasea.io/?doc=community-contributing)
+- Public roadmap: [docs.releasea.io/?doc=public-roadmap](https://docs.releasea.io/?doc=public-roadmap)
 
 ## Available Templates
 
