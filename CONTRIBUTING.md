@@ -85,7 +85,7 @@ Include these points in the PR description:
 
 ## Related Docs
 
-- Root contribution guide: [../CONTRIBUTING.md](../CONTRIBUTING.md)
-- Public roadmap: [../ROADMAP.md](../ROADMAP.md)
-- End-user templates guide: [../releasea-docs/src/docs/content/templates.md](../releasea-docs/src/docs/content/templates.md)
-- Template cookbook: [../releasea-docs/src/docs/content/template-cookbook.md](../releasea-docs/src/docs/content/template-cookbook.md)
+- Root contribution guide: [docs.releasea.io/?doc=community-contributing](https://docs.releasea.io/?doc=community-contributing)
+- Public roadmap: [docs.releasea.io/?doc=public-roadmap](https://docs.releasea.io/?doc=public-roadmap)
+- End-user templates guide: [docs.releasea.io/?doc=templates](https://docs.releasea.io/?doc=templates)
+- Template cookbook: [docs.releasea.io/?doc=template-cookbook](https://docs.releasea.io/?doc=template-cookbook)
