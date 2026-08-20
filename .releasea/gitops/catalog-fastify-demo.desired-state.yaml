@@ -1,0 +1,58 @@
+kind: releasea.service.desired-state
+apiVersion: v1
+version: 1
+exportedAt: "2026-08-20T12:49:26Z"
+service:
+    id: svc-7e54884f-1b51-4489-906c-983f5873eba5
+    name: catalog-fastify-demo
+    projectId: proj-default
+    type: microservice
+    spec:
+        managementMode: managed
+        sourceType: git
+        deployTemplateId: tpl-git
+        repo:
+            url: https://github.com/releasea/templates.git
+            branch: main
+            rootDir: api-node-fastify
+        image:
+            dockerImage: k3d-releasea-registry:5000/catalog-fastify-demo
+            dockerContext: .
+            dockerfilePath: Dockerfile
+            dockerCommand: npm run start
+        runtime:
+            port: 3000
+            healthCheckPath: /healthz
+            replicas: 1
+            minReplicas: 1
+            maxReplicas: 1
+            deploymentStrategy:
+                type: rolling
+        credentials:
+            scmCredentialId: scm-cred-482c3af2-b570-4f37-baf4-9cbdaa4aeecc
+            registryCredentialId: reg-cred-77bcbdd1-d6dd-45f8-b8bd-a049333ea6e9
+        environment:
+            keys: []
+            valuesExcluded: true
+        features:
+            autoDeploy: false
+            isActive: true
+            pauseOnIdle: false
+            pauseIdleTimeoutSeconds: 3600
+            repoManaged: false
+rules:
+    - id: rule-65f26d09-5167-4417-a2df-7a869fbe34c8
+      name: rule-default
+      environment: dev
+      protocol: https
+      port: 3000
+      publication:
+        internal: false
+        external: false
+      status: published
+      policy:
+        action: allow
+        ipPolicy: open
+        retries: 2
+        timeoutMs: 1500
+      lastPublishedAt: "2026-08-20T12:11:49Z"
